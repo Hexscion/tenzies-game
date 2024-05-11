@@ -114,9 +114,8 @@ function App() {
         <main>
             <div className='head-container'>
                 <div className='timer-container'>
-                    <h1>Time</h1><h1>{time} sec</h1>
-                    <br />
-                    <p>Best Time</p><p>{bestTime} sec</p>
+                    <div><h1>Time</h1><h1>{time} sec</h1></div>
+                    <div><p>Best Time</p><p>{bestTime} sec</p></div>
                 </div>
 
                 <div className='title-container'>
@@ -125,9 +124,8 @@ function App() {
                 </div>
 
                 <div className='rolls-container'>
-                    <h1>Roll</h1><h1>{roll}</h1>
-                    <br />
-                    <p>Best Roll</p><p>{bestRoll}</p>
+                    <div><h1>Roll</h1><h1>{roll}</h1></div>
+                    <div><p>Best Roll</p><p>{bestRoll}</p></div>
                 </div>
             </div>
             <div className="dice-container">

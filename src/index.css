@@ -52,6 +52,13 @@ main {
     align-items: center;
 }
 
+.timer-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .title-container {
     width: 60%;
     display: flex;
@@ -77,6 +84,13 @@ main {
 
 .rolls-container {
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rolls-container div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,4 +140,55 @@ main {
 .roll-dice:hover {
     background-color: #7950f2;
     transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+    main {
+        height: 100%;
+        width: 100%;
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+
+    .head-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+         'title'
+         'timer'
+         'rolls'
+         'dice';
+         gap: 20px;
+    }
+
+    .title-container {
+        grid-area: title;
+        width: 100%;
+    }
+
+    .timer-container {
+        grid-area: timer;
+        width: 100%;
+    }
+
+    .timer-container div {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .rolls-container {
+        grid-area: rolls;
+        width: 100%;
+    }
+
+    .rolls-container div {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .dice-container {
+        grid-area: dice;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
 }
